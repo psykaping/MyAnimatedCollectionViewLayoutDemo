@@ -1,0 +1,16 @@
+PODS:
+  - AnimatedCollectionViewLayout (0.5.0)
+
+DEPENDENCIES:
+  - AnimatedCollectionViewLayout
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AnimatedCollectionViewLayout
+
+SPEC CHECKSUMS:
+  AnimatedCollectionViewLayout: 8b660a623d85001f76f00f0d2302a7b043c72bda
+
+PODFILE CHECKSUM: a2c8ef2cef9f3fd7e89fbb4e61426e7fe786781a
+
+COCOAPODS: 1.6.1
