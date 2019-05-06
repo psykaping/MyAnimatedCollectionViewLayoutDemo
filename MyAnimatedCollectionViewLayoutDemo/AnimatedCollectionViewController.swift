@@ -1,10 +1,3 @@
-//
-//  AnimatedCollectionViewController.swift
-//  MyAnimatedCollectionViewLayoutDemo
-//
-//  Created by 王克平 on 2019/5/6.
-//  Copyright © 2019 王克平. All rights reserved.
-
 import UIKit
 import AnimatedCollectionViewLayout
 
@@ -15,16 +8,17 @@ class AnimatedCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.topItem?.title = "動畫牆"
+//加入動畫
         let layout = AnimatedCollectionViewLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         layout.itemSize = CGSize(width: width, height: width)
+//選擇動畫類型Cube
         layout.animator = CubeAttributesAnimator()
         layout.scrollDirection = .horizontal
         collectionView.collectionViewLayout = layout
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-
         return photo.count
     }
 
@@ -34,7 +28,6 @@ class AnimatedCollectionViewController: UICollectionViewController {
         image.frame = CGRect(x: 0, y: 0, width: width, height: width)
         image.image = UIImage(named: photo[indexPath.row])
         cell.contentView.addSubview(image)
-//        cell.backgroundColor = UIColor.purple
         return cell
     }
 
