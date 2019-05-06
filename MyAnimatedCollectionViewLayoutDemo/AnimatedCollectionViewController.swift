@@ -4,7 +4,6 @@
 //
 //  Created by 王克平 on 2019/5/6.
 //  Copyright © 2019 王克平. All rights reserved.
-//
 
 import UIKit
 import AnimatedCollectionViewLayout
